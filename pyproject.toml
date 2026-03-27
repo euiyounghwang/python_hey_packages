@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hey_utils"
+version = "0.0.1"
+description = "python wrapper for hey_utils services"
+authors = [
+    { name = "Euiyoung Hwang", email = "marieuig@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests", # 의존성 패키지
+]
+
+[project.urls]
+"Github" = "<https://github.com/euiyounghwang/python_hey_packages>"
+"Bug Tracker" = "<https://github.com/kenshin579/korea-investment-stock/issues>"

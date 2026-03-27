@@ -1,2 +1,0 @@
-# python_hey_packages
-python_hey_packages
