@@ -39,7 +39,7 @@ Requires-Dist: requests
     # PYPI Deployment
     twine upload dist/*
   ```
-  - __Test Packate Commands__
+  - __Test Package Commands__
     ```bash
     python -m venv .test
     source .test/Scripts/activate
