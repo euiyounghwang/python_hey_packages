@@ -14,7 +14,8 @@ def test_module_func():
         
     
 def test_gRPC():
-    response = otlp_grpc.otlp_grpc().get_test()
+    # response = otlp_grpc.otlp_grpc().get_test()
+    response = otlp_grpc().get_test()
     assert response is not None
     assert response == "Ok"
     
