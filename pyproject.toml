@@ -17,4 +17,3 @@ dependencies = [
 
 [project.urls]
 "Github" = "<https://github.com/euiyounghwang/python_hey_packages>"
-"Bug Tracker" = "<https://github.com/kenshin579/korea-investment-stock/issues>"

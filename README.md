@@ -17,7 +17,10 @@
     - wheel
     * Getting build dependencies for sdist...
     ...
-
+    adding 'hey_utils-0.0.1.dist-info/RECORD'
+    removing build\bdist.win-amd64\wheel
+    Successfully built hey_utils-0.0.1.tar.gz and hey_utils-0.0.1-py3-none-any.whl
+    
     # Test Site
     https://test.pypi.org/manage/projects/
 
