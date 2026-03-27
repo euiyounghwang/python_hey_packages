@@ -1,1 +1,1 @@
-otlp_grpc
+hey_utils

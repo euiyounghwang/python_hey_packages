@@ -1,4 +1,3 @@
-
 class otlp_grpc:
 
     def __init__(self):

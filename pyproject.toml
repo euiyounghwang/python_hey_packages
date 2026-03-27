@@ -15,5 +15,10 @@ dependencies = [
     "requests", # 의존성 패키지
 ]
 
+[tool.poetry]
+# Add the lines below
+packages = [
+    { include = "*.py", from = "src" },
+]
 [project.urls]
 "Github" = "<https://github.com/euiyounghwang/python_hey_packages>"

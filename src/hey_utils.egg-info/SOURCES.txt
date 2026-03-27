@@ -1,9 +1,11 @@
 README.md
 pyproject.toml
+src/hey_utils/__init__.py
+src/hey_utils/main.py
+src/hey_utils/otlp_grpc.py
 src/hey_utils.egg-info/PKG-INFO
 src/hey_utils.egg-info/SOURCES.txt
 src/hey_utils.egg-info/dependency_links.txt
 src/hey_utils.egg-info/requires.txt
 src/hey_utils.egg-info/top_level.txt
-src/otlp_grpc/__init__.py
-src/otlp_grpc/otlp_grpc.py
+tests/test_packages.py
