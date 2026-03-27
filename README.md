@@ -25,12 +25,13 @@
     # Test Site
     https://test.pypi.org/manage/projects/
 
+    pip install twine
     twine upload --repository testpypi dist/*
 
     # PYPI Deployment
     twine upload dist/*
-  ```
-  - __Test Packate Commands__
+    ```
+  - __Test Package Commands__
     ```bash
     python -m venv .test
     source .test/Scripts/activate
@@ -43,20 +44,19 @@
     Collecting charset_normalizer<4,>=2 (from requests->hey-utils==0.0.1)
     Downloading charset_normalizer-3.4.6-cp311-cp311-win_amd64.whl.metadata (41 kB)
     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.4/41.4 kB 662.0 kB/s eta 0:00:00
-    
+      
     $ pip list
-    Package            Version
-    ------------------ ---------
-    certifi            2026.2.25
-    charset-normalizer 3.4.6
-    hey_utils          0.0.1
-    idna               3.11
-    pip                24.0
-    requests           2.33.0
-    setuptools         79.0.1
-    urllib3            2.6.3
+      Package            Version
+      ------------------ ---------
+      certifi            2026.2.25
+      charset-normalizer 3.4.6
+      hey_utils          0.0.1
+      idna               3.11
+      pip                24.0
+      requests           2.33.0
+      setuptools         79.0.1
+      urllib3            2.6.3
     ```
-
 
 
 ### Pytest
