@@ -1,6 +1,6 @@
 
 # PYPI Package Build
-<i>- PYPI packet build
+<i>- PYPI package build
 
 
 ### PYPI Package Deployment
