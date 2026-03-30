@@ -17,6 +17,8 @@ dependencies = [
     "opentelemetry-sdk (>=1.40.0,<2.0.0)",
     "opentelemetry-exporter-otlp-proto-grpc (>=1.40.0,<2.0.0)",
     "opentelemetry-exporter-otlp-proto-http (>=1.40.0,<2.0.0)",
+    "build (>=1.4.2,<2.0.0)",
+    "twine (>=6.2.0,<7.0.0)",
 ]
 
 [tool.poetry]

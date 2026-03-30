@@ -11,6 +11,8 @@ Requires-Dist: opentelemetry-api<2.0.0,>=1.40.0
 Requires-Dist: opentelemetry-sdk<2.0.0,>=1.40.0
 Requires-Dist: opentelemetry-exporter-otlp-proto-grpc<2.0.0,>=1.40.0
 Requires-Dist: opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.40.0
+Requires-Dist: build<2.0.0,>=1.4.2
+Requires-Dist: twine<7.0.0,>=6.2.0
 
 
 # PYPI Package Build
