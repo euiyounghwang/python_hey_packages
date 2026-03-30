@@ -1,1 +1,5 @@
 requests
+opentelemetry-api<2.0.0,>=1.40.0
+opentelemetry-sdk<2.0.0,>=1.40.0
+opentelemetry-exporter-otlp-proto-grpc<2.0.0,>=1.40.0
+opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.40.0

@@ -3,12 +3,16 @@ Name: hey_utils
 Version: 0.0.1
 Summary: python wrapper for hey_utils services
 Author-email: Euiyoung Hwang <marieuig@gmail.com>
-Project-URL: Github, <https://github.com/euiyounghwang/python_hey_packages>
+Project-URL: Github, https://github.com/euiyounghwang/python_hey_packages
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 Requires-Dist: requests
+Requires-Dist: opentelemetry-api<2.0.0,>=1.40.0
+Requires-Dist: opentelemetry-sdk<2.0.0,>=1.40.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc<2.0.0,>=1.40.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http<2.0.0,>=1.40.0
 
 
 # PYPI Package Build
-<i>- PYPI packet build
+<i>- PYPI package build
 

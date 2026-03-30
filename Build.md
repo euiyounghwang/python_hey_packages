@@ -9,6 +9,8 @@
   - __Installation Commands__
     ```bash
     pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org"
+    poetry config certificates.PyPI.cert false
+    
     pip install build --trusted-host pypi.org --trusted-host files.pythonhosted.org
 
     python -m build
