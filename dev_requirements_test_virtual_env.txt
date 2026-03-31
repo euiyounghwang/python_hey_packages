@@ -49,7 +49,7 @@ pluggy==1.6.0
 poetry==2.3.2
 poetry-core==2.3.1
 protobuf==6.33.6
-Pygments==2.19.2
+Pygments==2.20.0
 pyproject_hooks==1.2.0
 pytest==9.0.2
 pytest-cov==7.1.0
@@ -57,7 +57,7 @@ python-discovery==1.2.1
 pywin32-ctypes==0.2.3
 RapidFuzz==3.14.3
 readme_renderer==44.0
-requests==2.33.0
+requests==2.33.1
 requests-toolbelt==1.0.0
 rfc3986==2.0.0
 rich==14.3.3

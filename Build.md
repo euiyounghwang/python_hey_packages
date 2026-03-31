@@ -39,6 +39,8 @@
     source .test/Scripts/activate
 
     pip install ./dist/*.whl
+
+    # reinstall the package
     pip install ./dist/*.whl --force-reinstall
     ...
     Collecting requests (from hey-utils==0.0.1)

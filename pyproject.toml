@@ -3,9 +3,9 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hey_utils"
+name = "search_monitoring_tools"
 version = "0.0.1"
-description = "python wrapper for hey_utils services"
+description = "python wrapper for search_monitoring_tools services"
 authors = [
     { name = "Euiyoung Hwang", email = "marieuig@gmail.com" }
 ]

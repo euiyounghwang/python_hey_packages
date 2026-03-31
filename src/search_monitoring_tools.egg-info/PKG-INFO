@@ -1,7 +1,7 @@
 Metadata-Version: 2.4
-Name: hey_utils
+Name: search_monitoring_tools
 Version: 0.0.1
-Summary: python wrapper for hey_utils services
+Summary: python wrapper for search_monitoring_tools services
 Author-email: Euiyoung Hwang <marieuig@gmail.com>
 Project-URL: Github, https://github.com/euiyounghwang/python_hey_packages
 Requires-Python: >=3.9

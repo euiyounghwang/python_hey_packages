@@ -1,7 +1,7 @@
 
 import pytest
 import hey_utils
-from hey_utils import otlp_grpc
+from search_monitoring_tools import otlp_grpc
 
 @pytest.mark.skip(reason="no way of currently testing this")
 def test_skip():
