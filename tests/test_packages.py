@@ -22,17 +22,22 @@ def test_module_func():
     assert response == "ok"
         
     
-def test_gRPC():
-    # response = otlp_grpc.otlp_grpc().get_test()
-
-    otlp_instance = otlp_grpc("localhost")
+def test_gRPC(mock_opentelemetrics_grpc_url):
+    otlp_instance = otlp_grpc(mock_opentelemetrics_grpc_url)
 
     response = otlp_instance.get_test()
     assert response is not None
     assert response == "Ok"
 
     response = otlp_instance.get_otlp_host()
-    assert response == "localhost"
+    assert response == "http://localhost:4318/v1/metrics"
+    assert response == mock_opentelemetrics_grpc_url
+
+    ''' Varify if metrics can be sent via grPC to the Opentelemetry Server'''
+    # response = otlp_instance.push_prometheus_via_grpc()
+    # assert response is not None
+    # print(response)
+
     
     
     
