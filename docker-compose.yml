@@ -1,0 +1,72 @@
+name: search-monitoring-services
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      # Mount the local prometheus.yml file into the container's config path.
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml 
+      # Optional: Persist Prometheus data on the host to retain metrics.
+      # - ./prometheus_data:/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=2d # 90일보다 오래된 metrics는 삭제
+      - --storage.tsdb.retention.size=1GB # 10GB를 넘을 시 오래된 metrics 삭제
+      - --web.console.libraries=/usr/share/prometheus/console_libraries
+      - --web.console.templates=/usr/share/proemtheus/consoles
+      - --web.enable-admin-api
+    ports:
+      - '9090:9090'
+    networks:
+      - bridge
+
+  # docker run -d -p 9091:9091 prom/pushgateway
+  pushgateway:
+    image: prom/pushgateway:latest
+    ports:
+      - "9091:9091"
+    restart: always
+    networks:
+      - bridge
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - bridge
+    depends_on:
+      - prometheus
+
+ # docker run -d --name otel-col -p 4317:4317 -p 4318:4318 -v $(pwd)/otel-collector-config.yml:/etc/otelcol-config.yml otel/opentelemetry-collector:latest
+ # docker compose run --rm otel-collector
+ # docker compose up otel-collector
+ # http://localhost:8889/metrics
+  otel-collector:
+    image: otel/opentelemetry-collector
+    volumes:
+      - ./otel-collector-config.yml:/etc/otelcol-config.yml
+    restart: unless-stopped
+    command: [ "--config=/etc/otelcol-config.yml"]
+    ports:
+      - 2888:1888 # pprof extension
+      - 8888:8888 # Prometheus metrics exposed by the Collector
+      - 8889:8889 # Prometheus exporter metrics
+      - 13133:13133 # health_check extension
+      - 4317:4317 # OTLP gRPC receiver
+      - 4318:4318 # OTLP http receiver
+      - 55679:55679 # zpages extension
+    networks:
+      - bridge
+
+volumes:
+  data: {}  # Volume for InfluxDB data
+
+
+networks:
+  bridge:
+    driver: bridge

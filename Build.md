@@ -61,6 +61,11 @@
       setuptools         79.0.1
       urllib3            2.6.3
     ```
+  - __Installation Services__ : Run Opentelemetry-collector and others for testing via docker-compose.yml(`./docker-compose.yml`), Refer to the screenshot for the docker service
+    ```bash
+    # Run Otel-collector via docker-compose.yml : docker compose up otel-collector
+    # Prometheus expoter endpoint via Otel-collector : http://localhost:8889/metrics
+    ```
 
 
 ### Pytest
