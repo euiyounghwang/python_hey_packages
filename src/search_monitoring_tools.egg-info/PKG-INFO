@@ -4,7 +4,7 @@ Version: 0.0.1
 Summary: python wrapper for search_monitoring_tools services
 Author-email: Euiyoung Hwang <marieuig@gmail.com>
 Project-URL: Github, https://github.com/euiyounghwang/python_hey_packages
-Requires-Python: >=3.9
+Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 Requires-Dist: requests
 Requires-Dist: opentelemetry-api<2.0.0,>=1.40.0

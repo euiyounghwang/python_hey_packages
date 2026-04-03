@@ -10,7 +10,7 @@ authors = [
     { name = "Euiyoung Hwang", email = "marieuig@gmail.com" }
 ]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
     "requests", # 의존성 패키지
     "opentelemetry-api (>=1.40.0,<2.0.0)",
@@ -22,6 +22,11 @@ dependencies = [
 ]
 
 [tool.poetry]
+name = "search_monitoring_tools"
+version = "0.0.1"
+description = ""
+authors = ["Euiyoung <marieuig@gmail.com>>"]
+readme = "README.md"
 # Add the lines below
 packages = [
     { include = "*.py", from = "src" },

@@ -20,6 +20,7 @@ fi
 
 export PYTHONDONTWRITEBYTECODE=1
 
+# sed -i -e 's/\r$//' ./pytest.sh (bad interpreter: No such file or directory)
 # py.test -v tests
 # poetry run py.test -v --junitxml=test-reports/junit/pytest.xml --cov-report html --cov tests/
 pytest -v --cov ./tests
